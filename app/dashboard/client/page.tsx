@@ -16,9 +16,9 @@ export default function ClientDashboard() {
     const [selectedCert, setSelectedCert] = useState<BoxCollection | null>(null);
 
     return (
-        <div className="p-8 max-w-7xl mx-auto pb-24">
+        <div className="p-4 md:p-8 max-w-7xl mx-auto pb-24">
             {/* Header */}
-            <header className="flex justify-between items-center mb-8">
+            <header className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-0 mb-8">
                 <div>
                     <h1 className="text-2xl font-bold text-gray-900">Sustainability Dashboard</h1>
                     <p className="text-gray-500">Welcome back, {client.name}</p>

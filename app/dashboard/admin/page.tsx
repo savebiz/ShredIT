@@ -22,9 +22,9 @@ export default function AdminDashboard() {
     };
 
     return (
-        <div className="p-8 max-w-7xl mx-auto">
+        <div className="p-4 md:p-8 max-w-7xl mx-auto">
             {/* Header */}
-            <header className="flex justify-between items-center mb-8">
+            <header className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-0 mb-8">
                 <div>
                     <h1 className="text-2xl font-bold text-gray-900">Operations Command Center</h1>
                     <p className="text-gray-500">Fleet & Collection Management</p>
@@ -121,40 +121,42 @@ export default function AdminDashboard() {
                                 View All <ArrowRight className="w-3 h-3" />
                             </button>
                         </div>
-                        <table className="w-full text-sm text-left">
-                            <thead className="bg-gray-50 text-gray-500 font-medium">
-                                <tr>
-                                    <th className="px-6 py-3">Time</th>
-                                    <th className="px-6 py-3">Client</th>
-                                    <th className="px-6 py-3">Location</th>
-                                    <th className="px-6 py-3">Weight</th>
-                                    <th className="px-6 py-3">Status</th>
-                                </tr>
-                            </thead>
-                            <tbody className="divide-y divide-gray-100">
-                                <tr className="hover:bg-gray-50">
-                                    <td className="px-6 py-4 text-gray-500">10:42 AM</td>
-                                    <td className="px-6 py-4 font-medium text-gray-900">Access Bank</td>
-                                    <td className="px-6 py-4 text-gray-500">Lagos HQ</td>
-                                    <td className="px-6 py-4 text-gray-900 font-semibold">500 kg</td>
-                                    <td className="px-6 py-4"><span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">Verified</span></td>
-                                </tr>
-                                <tr className="hover:bg-gray-50">
-                                    <td className="px-6 py-4 text-gray-500">09:15 AM</td>
-                                    <td className="px-6 py-4 font-medium text-gray-900">Zenith Law</td>
-                                    <td className="px-6 py-4 text-gray-500">Ikoyi Branch</td>
-                                    <td className="px-6 py-4 text-gray-900 font-semibold">120 kg</td>
-                                    <td className="px-6 py-4"><span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">Verified</span></td>
-                                </tr>
-                                <tr className="hover:bg-gray-50">
-                                    <td className="px-6 py-4 text-gray-500">08:30 AM</td>
-                                    <td className="px-6 py-4 font-medium text-gray-900">Total Energies</td>
-                                    <td className="px-6 py-4 text-gray-500">VI Office</td>
-                                    <td className="px-6 py-4 text-gray-900 font-semibold">--</td>
-                                    <td className="px-6 py-4"><span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium">En Route</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div className="overflow-x-auto">
+                            <table className="w-full text-sm text-left min-w-[600px]">
+                                <thead className="bg-gray-50 text-gray-500 font-medium">
+                                    <tr>
+                                        <th className="px-6 py-3">Time</th>
+                                        <th className="px-6 py-3">Client</th>
+                                        <th className="px-6 py-3">Location</th>
+                                        <th className="px-6 py-3">Weight</th>
+                                        <th className="px-6 py-3">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-gray-100">
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="px-6 py-4 text-gray-500">10:42 AM</td>
+                                        <td className="px-6 py-4 font-medium text-gray-900">Access Bank</td>
+                                        <td className="px-6 py-4 text-gray-500">Lagos HQ</td>
+                                        <td className="px-6 py-4 text-gray-900 font-semibold">500 kg</td>
+                                        <td className="px-6 py-4"><span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">Verified</span></td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="px-6 py-4 text-gray-500">09:15 AM</td>
+                                        <td className="px-6 py-4 font-medium text-gray-900">Zenith Law</td>
+                                        <td className="px-6 py-4 text-gray-500">Ikoyi Branch</td>
+                                        <td className="px-6 py-4 text-gray-900 font-semibold">120 kg</td>
+                                        <td className="px-6 py-4"><span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">Verified</span></td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="px-6 py-4 text-gray-500">08:30 AM</td>
+                                        <td className="px-6 py-4 font-medium text-gray-900">Total Energies</td>
+                                        <td className="px-6 py-4 text-gray-500">VI Office</td>
+                                        <td className="px-6 py-4 text-gray-900 font-semibold">--</td>
+                                        <td className="px-6 py-4"><span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium">En Route</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
