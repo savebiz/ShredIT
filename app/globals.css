@@ -7,7 +7,8 @@
   --color-primary: #7C3AED;
   --color-secondary: #A78BFA;
   --color-cta: #06B6D4;
-  --color-background: #FAF5FF; /* Light mode bg */
+  --color-background: #FAF5FF;
+  /* Light mode bg */
   --color-text: #1E1B4B;
   --color-surface: #FFFFFF;
 
@@ -21,17 +22,23 @@
   --space-3xl: 4rem;
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
-  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
-  --shadow-xl: 0 20px 25px rgba(0,0,0,0.15);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
 }
 
 @layer base {
   body {
     @apply bg-[var(--color-background)] text-[var(--color-text)] font-body antialiased;
   }
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-heading font-bold text-[var(--color-primary)];
   }
 }
@@ -40,12 +47,15 @@
   .btn-primary {
     @apply bg-[var(--color-cta)] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:opacity-90 hover:-translate-y-px shadow-md cursor-pointer;
   }
+
   .btn-secondary {
     @apply bg-transparent text-[var(--color-primary)] border-2 border-[var(--color-primary)] px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:bg-[var(--color-primary)] hover:text-white cursor-pointer;
   }
+
   .card {
-    @apply bg-white rounded-xl padding-6 shadow-[var(--shadow-md)] transition-all duration-200 hover:shadow-[var(--shadow-lg)] hover:-translate-y-0.5 cursor-pointer border border-slate-100;
+    @apply bg-white rounded-xl p-6 shadow-[var(--shadow-md)] transition-all duration-200 hover:shadow-[var(--shadow-lg)] hover:-translate-y-0.5 cursor-pointer border border-slate-100;
   }
+
   .input {
     @apply px-4 py-3 border border-slate-200 rounded-lg text-base transition-colors duration-200 focus:outline-none focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)]/20;
   }
