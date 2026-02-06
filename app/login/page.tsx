@@ -42,9 +42,9 @@ export default function LoginPage() {
                     </div>
                     <h2 className="mt-6 text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
                     <p className="mt-2 text-sm text-gray-600">
-                        Or{' '}
+                        Don't have an account?{' '}
                         <Link href="/signup" className="font-medium text-cta hover:text-cta/80">
-                            start your 14-day free trial
+                            Sign up
                         </Link>
                     </p>
                 </div>
