@@ -34,9 +34,8 @@ export default function SignupPage() {
             setError(error.message);
             setLoading(false);
         } else {
-            // Check for email confirmation requirement or auto-login
-            router.push('/dashboard');
-            router.refresh();
+            // User created, now redirect to verification page
+            router.push(`/verify-email?email=${encodeURIComponent(email)}`);
         }
     };
 
