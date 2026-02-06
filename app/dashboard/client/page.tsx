@@ -6,7 +6,7 @@ import { PointsWallet } from '@/components/dashboard/PointsWallet';
 import { MOCK_CLIENT, calculateImpact, BoxCollection } from '@/lib/store';
 import { Trees, CloudFog, Droplets, Recycle, FileCheck, Truck, History, Download } from 'lucide-react';
 import { useState } from 'react';
-import { CertificateModal } from '@/components/dashboard/Certificate.tsx';
+import { CertificateModal } from '@/components/dashboard/Certificate';
 
 export default function ClientDashboard() {
     const client = MOCK_CLIENT;
