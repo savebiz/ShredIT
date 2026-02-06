@@ -29,21 +29,7 @@ function VerifyEmailForm() {
     const [error, setError] = useState<string | null>(null);
     const [countdown, setCountdown] = useState(0);
 
-    // Countdown timer for resend
-    const useEffect = (fn: any, deps: any[]) => {
-        // This is a hacky way to access React.useEffect since it wasn't imported properly at top level
-        // Let's rely on the import from 'react'
-        import('react').then(React => React.useEffect(fn, deps));
-    }
-    // Correction: It is imported at line 3. I will just use `useEffect`.
 
-    // Countdown effect
-    import { useEffect as reactUseEffect } from 'react';
-    // Actually, line 3 has `import { useState, Suspense } from 'react';`. I need to add useEffect there.
-    // I will replace the imports first.
-
-    // Waiting for next step to replace imports.
-    // I will implement the handleResend logic with logging here.
 
     const handleResend = async () => {
         if (!email || countdown > 0) return;
