@@ -16,8 +16,8 @@ const config: Config = {
                 text: "var(--color-text)",
             },
             fontFamily: {
-                heading: ["Poppins", "sans-serif"],
-                body: ["Open Sans", "sans-serif"],
+                heading: ["Inter", "sans-serif"],
+                body: ["Inter", "sans-serif"],
             },
             spacing: {
                 xs: "var(--space-xs)",

@@ -10,46 +10,47 @@ export default function Hero() {
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div className="grid lg:grid-cols-2 gap-16 items-center">
                     <div>
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-100 text-green-700 text-sm font-medium mb-6">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-primary text-sm font-semibold mb-6 border border-blue-100">
                             <span className="relative flex h-2 w-2">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                             </span>
-                            Now Live: National Carbon Registry Integration
+                            Secure Destruction & Carbon Verification
                         </div>
 
-                        <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
-                            Transform Paper Waste into <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cta">Verified Carbon Credits</span>
+                        <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6 text-gray-900">
+                            Secure Data Destruction <br />
+                            <span className="text-primary">Meets Environmental Impact</span>
                         </h1>
 
                         <p className="text-lg text-gray-600 mb-8 max-w-xl leading-relaxed">
-                            The first comprehensive platform connecting secure document destruction with Nigeria's carbon market. Track impact, earn verified credits, and generate audit-ready ESG reports.
+                            Protect your business with certified document shredding while earning verified carbon credits. The most secure path to sustainability for Nigerian enterprises.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link href="#contact" className="btn-primary flex items-center justify-center gap-2 group">
-                                Calculate Your Impact
-                                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                            <Link href="#contact" className="bg-cta hover:bg-cta/90 text-white font-bold py-3 px-8 rounded-lg shadow-xl shadow-cta/20 flex items-center justify-center gap-2 group transition-all transform hover:-translate-y-1">
+                                Request Pickup
+                                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                             </Link>
-                            <Link href="#demo" className="btn-secondary flex items-center justify-center">
-                                Watch Methodology Video
+                            <Link href="#demo" className="bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-8 rounded-lg flex items-center justify-center transition-all">
+                                How It Works
                             </Link>
                         </div>
 
                         <div className="mt-12 flex items-center gap-8 text-sm font-medium text-gray-500">
                             <div className="flex items-center gap-2">
-                                <ShieldCheck className="h-5 w-5 text-cta" />
+                                <ShieldCheck className="h-5 w-5 text-secondary" />
                                 <span>NDPR Compliant</span>
                             </div>
                             <div className="flex items-center gap-2">
-                                <Recycle className="h-5 w-5 text-cta" />
+                                <Recycle className="h-5 w-5 text-secondary" />
                                 <span>ISO 14001 Standards</span>
                             </div>
                             <div className="flex items-center gap-2">
-                                <BarChart3 className="h-5 w-5 text-cta" />
-                                <span>VCS Verified</span>
+                                <BarChart3 className="h-5 w-5 text-secondary" />
+                                <span>NAID Certified</span>
                             </div>
                         </div>
                     </div>

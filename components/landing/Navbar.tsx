@@ -8,22 +8,24 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <nav className="fixed top-0 w-full z-50 bg-white border-b border-gray-100 shadow-sm">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between h-16 items-center">
-                    <div className="flex items-center gap-2">
-                        <div className="bg-primary/10 p-2 rounded-full">
-                            <Leaf className="h-6 w-6 text-primary" />
+                <div className="flex justify-between h-20 items-center">
+                    <div className="flex items-center gap-3">
+                        <div className="bg-primary p-2 rounded-lg">
+                            <Leaf className="h-6 w-6 text-white" />
                         </div>
-                        <span className="font-heading font-bold text-xl text-primary">DataGuard</span>
+                        <span className="font-heading font-bold text-2xl text-primary tracking-tight">DataGuard</span>
                     </div>
 
                     <div className="hidden md:flex items-center space-x-8">
-                        <Link href="#features" className="text-text hover:text-primary transition-colors">Features</Link>
-                        <Link href="#how-it-works" className="text-text hover:text-primary transition-colors">How it Works</Link>
-                        <Link href="#testimonials" className="text-text hover:text-primary transition-colors">Testimonials</Link>
-                        <Link href="/login" className="btn-secondary py-2 px-4 text-sm">Login</Link>
-                        <Link href="#contact" className="btn-primary py-2 px-4 text-sm shadow-lg shadow-cta/20">Contact Sales</Link>
+                        <Link href="#features" className="text-gray-600 hover:text-primary font-medium transition-colors">Services</Link>
+                        <Link href="#how-it-works" className="text-gray-600 hover:text-primary font-medium transition-colors">Process</Link>
+                        <Link href="#about" className="text-gray-600 hover:text-primary font-medium transition-colors">About Us</Link>
+                        <Link href="/login" className="text-primary font-semibold hover:text-primary/80 px-4">Login</Link>
+                        <Link href="#contact" className="bg-cta hover:bg-cta/90 text-white font-bold py-2.5 px-6 rounded-md shadow-lg shadow-cta/20 transition-all transform hover:-translate-y-0.5">
+                            Get Quote
+                        </Link>
                     </div>
 
                     <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 text-text">

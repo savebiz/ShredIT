@@ -3,7 +3,7 @@ import { Leaf, Twitter, Linkedin, Facebook, Instagram } from 'lucide-react';
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-900 text-white pt-20 pb-10">
+        <footer className="bg-primary text-white pt-24 pb-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-4 gap-12 mb-16">
                     <div className="col-span-1 md:col-span-2">
@@ -37,8 +37,8 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
-                    <p className="text-gray-500 text-sm">
+                <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p className="text-blue-200 text-sm">
                         © {new Date().getFullYear()} DataGuard Document Management Limited. All rights reserved.
                     </p>
 
