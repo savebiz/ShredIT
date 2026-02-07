@@ -25,6 +25,10 @@ export default function LoginPage() {
         });
 
         if (error) {
+            if (error.message.includes('Email not confirmed')) {
+                router.push(`/verify-email?email=${encodeURIComponent(email)}`);
+                return;
+            }
             setError(error.message);
             setLoading(false);
         } else {
