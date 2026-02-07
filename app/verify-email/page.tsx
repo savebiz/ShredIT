@@ -13,6 +13,14 @@ function VerifyEmailForm() {
     // Get email from URL if present
     const emailParam = searchParams.get('email');
 
+    const [email, setEmail] = useState(emailParam || '');
+    const [token, setToken] = useState('');
+    const [loading, setLoading] = useState(false);
+    const [resendLoading, setResendLoading] = useState(false);
+    const [message, setMessage] = useState<string | null>(null);
+    const [error, setError] = useState<string | null>(null);
+    const [countdown, setCountdown] = useState(0);
+
     // Timer effect
     useEffect(() => {
         if (countdown > 0) {
@@ -21,13 +29,7 @@ function VerifyEmailForm() {
         }
     }, [countdown]);
 
-    const [email, setEmail] = useState(emailParam || '');
-    const [token, setToken] = useState('');
-    const [loading, setLoading] = useState(false);
-    const [resendLoading, setResendLoading] = useState(false);
-    const [message, setMessage] = useState<string | null>(null);
-    const [error, setError] = useState<string | null>(null);
-    const [countdown, setCountdown] = useState(0);
+
 
 
 
