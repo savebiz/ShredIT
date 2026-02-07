@@ -12,10 +12,9 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-20 items-center">
                     <div className="flex items-center gap-3">
-                        <div className="bg-primary p-2 rounded-lg">
-                            <Leaf className="h-6 w-6 text-white" />
-                        </div>
-                        <span className="font-heading font-bold text-2xl text-primary tracking-tight">DataGuard</span>
+                        <Link href="/">
+                            <img src="/assets/DataGuard-Logo-transparent.png" alt="DataGuard" className="h-10 w-auto" />
+                        </Link>
                     </div>
 
                     <div className="hidden md:flex items-center space-x-8">
