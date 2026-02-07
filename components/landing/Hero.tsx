@@ -3,16 +3,16 @@ import { ArrowRight, Recycle, ShieldCheck, BarChart3 } from 'lucide-react';
 
 export default function Hero() {
     return (
-        <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-16 overflow-hidden">
             {/* Background decoration */}
             <div className="absolute top-0 right-0 -z-10 translate-x-1/3 -translate-y-1/4 opacity-10">
                 <Recycle size={600} className="text-primary" />
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                     <div>
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-primary text-sm font-semibold mb-6 border border-blue-100">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-primary text-sm font-semibold mb-4 border border-blue-100">
                             <span className="relative flex h-2 w-2">
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
@@ -20,12 +20,12 @@ export default function Hero() {
                             Secure Destruction & Carbon Verification
                         </div>
 
-                        <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6 text-gray-900">
+                        <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 text-gray-900">
                             Secure Data Destruction <br />
                             <span className="text-primary">Meets Environmental Impact</span>
                         </h1>
 
-                        <p className="text-lg text-gray-600 mb-8 max-w-xl leading-relaxed">
+                        <p className="text-lg text-gray-600 mb-6 max-w-xl leading-relaxed">
                             Protect your business with certified document shredding while earning verified carbon credits. The most secure path to sustainability for Nigerian enterprises.
                         </p>
 
@@ -39,7 +39,7 @@ export default function Hero() {
                             </Link>
                         </div>
 
-                        <div className="mt-12 flex items-center gap-8 text-sm font-medium text-gray-500">
+                        <div className="mt-8 flex items-center gap-6 text-sm font-medium text-gray-500">
                             <div className="flex items-center gap-2">
                                 <ShieldCheck className="h-5 w-5 text-secondary" />
                                 <span>NDPR Compliant</span>
@@ -55,7 +55,7 @@ export default function Hero() {
                         </div>
                     </div>
 
-                    <div className="relative">
+                    <div className="relative mt-8 lg:mt-0">
                         <div className="relative bg-white rounded-2xl shadow-xl border border-gray-100 p-2 z-10 animate-fade-in-up">
                             {/* Placeholder for Dashboard Image / UI Mockup */}
                             <div className="aspect-[4/3] bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl flex items-center justify-center border border-dashed border-gray-300">

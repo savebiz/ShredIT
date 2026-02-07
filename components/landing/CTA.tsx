@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function CTA() {
     return (
-        <section id="contact" className="py-24 px-4 bg-primary relative overflow-hidden">
+        <section id="contact" className="py-16 px-4 bg-primary relative overflow-hidden">
             <div className="absolute inset-0 opacity-10 pattern-dots"></div>
 
             <div className="max-w-4xl mx-auto text-center relative z-10 text-white">
