@@ -29,7 +29,7 @@ export default function DashboardLayout({
     ];
 
     return (
-        <div className="min-h-screen bg-[#F8FAFC] flex">
+        <div className="min-h-screen bg-background flex">
             {/* Sidebar */}
             <div className="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0 bg-white border-r border-gray-100 shadow-[2px_0_20px_rgba(0,0,0,0.02)]">
                 <div className="flex items-center h-20 px-8 border-b border-gray-50">
