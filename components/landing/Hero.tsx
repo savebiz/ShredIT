@@ -57,14 +57,12 @@ export default function Hero() {
 
                     <div className="relative mt-8 lg:mt-0">
                         <div className="relative bg-white rounded-2xl shadow-xl border border-gray-100 p-2 z-10 animate-fade-in-up">
-                            {/* Placeholder for Dashboard Image / UI Mockup */}
-                            <div className="aspect-[4/3] bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl flex items-center justify-center border border-dashed border-gray-300">
-                                <div className="text-center">
-                                    <BarChart3 className="h-16 w-16 text-gray-300 mx-auto mb-4" />
-                                    <p className="text-gray-400 font-medium">Platform Dashboard UI</p>
-                                    <p className="text-xs text-gray-400 mt-1">Real-time carbon tracking & ESG reporting</p>
-                                </div>
-                            </div>
+                            {/* Dashboard Image */}
+                            <img
+                                src="/assets/dashboard.png"
+                                alt="DataGuard Dashboard Interface"
+                                className="w-full h-auto rounded-xl"
+                            />
 
                             {/* Floating Cards */}
                             <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg border border-gray-50 flex items-center gap-3 animate-float">
