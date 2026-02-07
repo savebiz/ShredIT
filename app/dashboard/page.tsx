@@ -1,6 +1,7 @@
 'use client';
 
 import { BarChart3, Truck, TreePine, Recycle, Cloud, Droplets, History, FileText, Leaf } from 'lucide-react';
+import ShreddingChart from './components/ShreddingChart';
 
 export default function DashboardPage() {
     return (
@@ -91,15 +92,9 @@ export default function DashboardPage() {
 
             {/* Bottom Section: Charts & Recent Activity */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                {/* Shredding Volume Chart Placeholder */}
-                <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm">
-                    <h3 className="font-bold text-gray-900 mb-6">Shredding Volume (kg)</h3>
-                    <div className="flex items-end justify-between h-48 gap-2 px-4">
-                        <div className="w-full bg-green-700/80 rounded-t-sm h-[60%] animate-pulse"></div>
-                        <div className="w-full bg-green-700/80 rounded-t-sm h-[40%]"></div>
-                        <div className="w-full bg-green-700/80 rounded-t-sm h-[80%]"></div>
-                        <div className="w-full bg-green-300 rounded-t-sm h-[30%]"></div>
-                    </div>
+                {/* Shredding Volume Chart */}
+                <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm min-h-[400px]">
+                    <ShreddingChart />
                 </div>
 
                 {/* Recent Collections */}
