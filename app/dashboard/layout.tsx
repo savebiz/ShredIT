@@ -52,23 +52,16 @@ export default function DashboardLayout({
                     </nav>
 
                     {/* User Profile at Bottom */}
-                    <div className="p-4 border-t border-gray-50">
-                        <div className="flex items-center gap-3 px-2">
-                            <div className="h-8 w-8 rounded-full bg-orange-100 flex items-center justify-center border border-orange-200">
-                                <span className="text-orange-700 font-bold text-xs">
-                                    {user?.email?.substring(0, 2).toUpperCase()}
-                                </span>
-                            </div>
-                            <div className="flex-1 overflow-hidden">
-                                <p className="text-xs font-medium text-gray-700 truncate" title={user?.email}>{user?.email}</p>
-                                <button
-                                    onClick={signOut}
-                                    className="text-[10px] font-medium text-gray-400 hover:text-red-500 flex items-center mt-0.5 transition-colors"
-                                >
-                                    <LogOut className="h-3 w-3 mr-1" />
-                                    Sign out
-                                </button>
-                            </div>
+                    <div className="p-6 border-t border-gray-100">
+                        <div className="flex flex-col gap-1">
+                            <p className="text-sm font-medium text-gray-700 truncate" title={user?.email}>{user?.email}</p>
+                            <button
+                                onClick={signOut}
+                                className="text-xs font-medium text-gray-500 hover:text-red-600 flex items-center transition-colors -ml-0.5"
+                            >
+                                <LogOut className="h-3 w-3 mr-1.5" />
+                                Sign out
+                            </button>
                         </div>
                     </div>
                 </div>
